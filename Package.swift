@@ -19,7 +19,7 @@ let package = Package(
             targets: ["ObjectCapture"]),
         .iOSApplication(
             name: "ObjectCaptureExampleApp",
-            targets: ["AppModule"],
+            targets: ["ObjectCaptureAppModule"],
             teamIdentifier: "3QPV894C33",
             displayVersion: "1.0",
             bundleVersion: "1",
@@ -51,7 +51,7 @@ let package = Package(
             ]
         ),
         .executableTarget(
-            name: "AppModule",
+            name: "ObjectCaptureAppModule",
             dependencies: ["ObjectCapture"],
             path: "Development",
             resources: [
